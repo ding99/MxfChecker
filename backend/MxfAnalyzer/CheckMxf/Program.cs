@@ -1,31 +1,21 @@
-﻿using MxfParser.Lib;
-using MxfParser.Lib.Models;
+﻿using MxfParser.Lib.Models;
 using MxfParser.Lib.Services;
 using MxfParser.Lib.Concretes;
 
-namespace CheckMxf;
 
-class Program
-{
-    static void Main ()
-    {
-        // See https://aka.ms/new-console-template for more information
-        Console.WriteLine ("== Start");
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine ("== Start");
 
-        string path = @"local:\abc\file.txt";
+Parser parser = new ();
+string path = @"Location://abc/file.txst";
 
-        Parser parser = new ();
+Task.Run (async () => {
+    parser = new ();
+    await parser.GetTree (path);
+    global::System.Console.WriteLine ($"async result [{parser.Mxf.Message}]");
+    });
 
-        string message = string.Empty;
-
-        Task.Run (async () =>
-        {
-            await parser.GetTree (path);
-        });
-
-        message = parser.Mxf.Message;
-
-        Console.WriteLine ($"Result : [{message}]");
-    }
-}
-
+if(parser != null)
+    Console.WriteLine ($"Result : [{parser.Mxf.Message}]");
+else
+    Console.WriteLine ("Null Parser");
