@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMxf", "CheckMxf\CheckMxf.csproj", "{D664130E-9F6D-4750-A9BC-37BADE9D61CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxfParser.Lib", "MxfParser.Lib\MxfParser.Lib.csproj", "{73030696-EF44-4A07-BC98-D5D27B62769C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D664130E-9F6D-4750-A9BC-37BADE9D61CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D664130E-9F6D-4750-A9BC-37BADE9D61CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D664130E-9F6D-4750-A9BC-37BADE9D61CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D664130E-9F6D-4750-A9BC-37BADE9D61CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73030696-EF44-4A07-BC98-D5D27B62769C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73030696-EF44-4A07-BC98-D5D27B62769C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73030696-EF44-4A07-BC98-D5D27B62769C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73030696-EF44-4A07-BC98-D5D27B62769C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7951EDDE-0F17-4D69-863B-375B63DB934A}
+	EndGlobalSection
+EndGlobal
