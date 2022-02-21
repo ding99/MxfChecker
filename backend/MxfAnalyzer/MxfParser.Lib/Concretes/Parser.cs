@@ -20,13 +20,12 @@ namespace MxfParser.Lib.Concretes
 
         public MxfInfo Mxf { get => this.mxf; }
 
-        public async Task GetTree(string path)
+        public void GetTree(string path)
         {
-            await Task.Run (() =>
-            {
-                this.mxf.Message = "Ready to Parse";
-                Console.WriteLine ("Running...");
-            });
+            Console.WriteLine ("Start to get tree");
+
+            this.mxf.Message = "Ready to Parse";
+            Console.WriteLine ("Running...");
 
             if (string.IsNullOrEmpty (this.mxf.Message))
                 this.mxf.Message = "Need to append something";
