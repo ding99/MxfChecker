@@ -10,6 +10,6 @@ namespace MxfParser.Lib.Services
 {
     public interface IParser
     {
-        Task GetTree (string path);
+        void GetTree (string path);
     }
 }
