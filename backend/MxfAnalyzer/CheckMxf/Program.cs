@@ -6,6 +6,7 @@ using MxfParser.Lib.Concretes;
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine ("== Start");
 
+Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine ($"Args: {args.Length}");
 foreach (var arg in args)
 {
@@ -25,3 +26,5 @@ if(parser != null)
     Console.WriteLine ($"Result : [{parser.Mxf.Message}]");
 else
     Console.WriteLine ("Null Parser");
+Console.ResetColor ();
+Console.WriteLine ("== End");
