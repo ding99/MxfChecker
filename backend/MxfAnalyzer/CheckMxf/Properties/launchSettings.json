@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CheckMxf": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Data\\Subtitle\\Teletext\\1program.mxf m d"
+    }
+  }
+}
