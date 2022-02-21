@@ -6,6 +6,12 @@ using MxfParser.Lib.Concretes;
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine ("== Start");
 
+Console.WriteLine ($"Args: {args.Length}");
+foreach (var arg in args)
+{
+    Console.WriteLine ($"  [{arg}]");
+}
+
 Parser parser = new ();
 string path = @"Location://abc/file.txst";
 
